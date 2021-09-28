@@ -1,0 +1,19 @@
+pull_request_rules:
+  - name: automatic merge for Dependabot pull requests
+    conditions:
+      - author~=^dependabot(|-preview)\[bot\]$
+      - check-success=build
+      - check-success=codecov/patch
+      - check-success=codecov/project
+    actions:
+      merge:
+        method: merge
+  - name: Automatic merge ⬇️ on approval ✔
+    conditions:
+      - "#approved-reviews-by>=1"
+      - check-success=build
+      - check-success=codecov/patch
+      - check-success=codecov/project
+    actions:
+      merge:
+        method: merge
