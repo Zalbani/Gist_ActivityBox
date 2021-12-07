@@ -15,4 +15,4 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: Zalbani
-          GIST_ID: e583c877c330ea58ff7ab18c75514780
+          GIST_ID: ${{ secrets.GIST_ID }}
