@@ -13,6 +13,6 @@ jobs:
       - uses: Zalbani/Gist_ActivityBox@master
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: Zalbani
           GIST_ID: e583c877c330ea58ff7ab18c75514780
